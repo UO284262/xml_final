@@ -1,0 +1,27 @@
+/*Especificidad: 001*/
+/************************
+  Abel Busto Dopazo - UO284262
+Descripción de estilos
+************************/
+
+article {
+  display: grid;
+  grid-template-areas: "texto multimedia"
+                       "texto multimedia"
+                       "nombre nombre";
+}
+
+article h2 {
+  grid-area: nombre;
+  justify-self: center;
+}
+
+article section:first-of-type{
+  grid-area: texto;
+}
+
+article section:last-of-type {
+  grid-area: multimedia;
+}
+
+
